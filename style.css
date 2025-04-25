@@ -1,0 +1,181 @@
+/* Grundlegendes Styling */
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #fff9fb;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Header & Navigation */
+header {
+    background-color: #fce4ec;
+    color: #b76e79;
+    padding: 1.5em 1em;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    letter-spacing: 1px;
+}
+
+nav {
+    margin-top: 1em;
+}
+
+nav a {
+    color: #b76e79;
+    margin: 0 1em;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #e91e63;
+}
+
+/* Hero-Section */
+.hero {
+    background-color: #ffeef2;
+    text-align: center;
+    padding: 3em 1em;
+}
+
+.hero h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+.hero p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* Featured Posts */
+.featured-posts {
+    padding: 2em 1em;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.featured-posts h3 {
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+.posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1.5em;
+}
+
+.post {
+    background-color: #ffffff;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    width: 300px;
+    padding: 1em;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease;
+}
+
+.post:hover {
+    transform: translateY(-5px);
+}
+
+.post img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1em;
+}
+
+.post h4 {
+    color: #b76e79;
+    margin-top: 0;
+}
+
+.post a {
+    display: inline-block;
+    margin-top: 0.5em;
+    color: #e91e63;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Newsletter */
+.newsletter {
+    background-color: #fce4ec;
+    text-align: center;
+    padding: 2.5em 1em;
+}
+
+.newsletter input[type="email"] {
+    padding: 0.8em;
+    width: 250px;
+    max-width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.newsletter button {
+    padding: 0.8em 1.5em;
+    background-color: #e91e63;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-left: 1em;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.newsletter button:hover {
+    background-color: #d81b60;
+}
+
+/* Footer */
+footer {
+    background-color: #fce4ec;
+    color: #b76e79;
+    text-align: center;
+    padding: 1.5em;
+    font-size: 0.9em;
+    margin-top: 2em;
+}
+
+footer a {
+    color: #b76e79;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .posts {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .post {
+        width: 90%;
+    }
+
+    nav a {
+        display: block;
+        margin: 0.5em 0;
+    }
+
+    .newsletter input,
+    .newsletter button {
+        display: block;
+        margin: 0.5em auto;
+        width: 90%;
+    }
+}
